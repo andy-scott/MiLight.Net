@@ -14,4 +14,4 @@ REM Build
 
 REM Package
 mkdir Build
-cmd /c %nuget% pack "MiLight.Net.Api\MiLight.Net.Api.csproj" -IncludeReferencedProjects -o Build -p Configuration=%config% %version%
+cmd /c %nuget% pack "source\MiLight.Net.Api\MiLight.Net.Api.csproj" -IncludeReferencedProjects -o Build -p Configuration=%config% %version%
