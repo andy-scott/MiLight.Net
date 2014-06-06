@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MiLight.Net.Api</id>
+    <title>MiLight .net api</title>
+    <version>0.0.1</version>
+    <authors>Andy Scott</authors>
+    <owners>Andy Scott</owners>
+    <summary>MiLight / AppLamp Api commands</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Portable Class Library of Api Commands to control MiLight / AppLamp lights, has White and Colour Commands</description>
+    <projectUrl>https://github.com/andy-scott/MiLight.net</projectUrl>
+    <tags>MiLight AppLamp</tags>
+  </metadata>
+  <files>
+    <file src="*.dll" target="lib" />
+  </files>
+</package>
