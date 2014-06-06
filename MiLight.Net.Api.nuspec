@@ -13,6 +13,6 @@
     <tags>MiLight AppLamp</tags>
   </metadata>
   <files>
-    <file src="*.dll" target="lib" />
+    <file src="source\MiLight.Net.Api\bin\Release\*.dll" target="lib" />
   </files>
 </package>
