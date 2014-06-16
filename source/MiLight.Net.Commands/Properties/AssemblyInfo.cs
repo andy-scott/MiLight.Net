@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("MiLight.Net.Api")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("MiLight.Net.Commands")]
+[assembly: AssemblyDescription("Portable Class Library of Api Commands to control MiLight / AppLamp lights, has White and Colour Commands")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MiLight.Net.Api")]
+[assembly: AssemblyProduct("MiLight.Net.Commands")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
