@@ -3,7 +3,7 @@
   <metadata>
     <id>MiLight.Net.Commands</id>
     <title>MiLight .net api commands</title>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
     <authors>Andy Scott</authors>
     <owners>Andy Scott</owners>
     <summary>MiLight / AppLamp Api commands</summary>
