@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
-    <id>MiLight.Net.Api</id>
-    <title>MiLight .net api</title>
+    <id>MiLight.Net.Commands</id>
+    <title>MiLight .net api commands</title>
     <version>0.0.1</version>
     <authors>Andy Scott</authors>
     <owners>Andy Scott</owners>
@@ -13,6 +13,6 @@
     <tags>MiLight AppLamp</tags>
   </metadata>
   <files>
-    <file src="MiLight.Net.Api.dll" target="lib\net40" />
+    <file src="MiLight.Net.commands.dll" target="lib\net40" />
   </files>
 </package>
