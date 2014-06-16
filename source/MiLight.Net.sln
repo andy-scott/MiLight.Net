@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiLight.Net.Commands", "MiLight.Net.Api\MiLight.Net.Commands.csproj", "{654B2A7D-DA52-44B2-98D2-11E1E89C2C8E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MiLight.Net.Commands", "MiLight.Net.Commands\MiLight.Net.Commands.csproj", "{654B2A7D-DA52-44B2-98D2-11E1E89C2C8E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
