@@ -1,6 +1,6 @@
 ﻿namespace MiLight.Net.Api
 {
-    public static class ColourCommands
+    public static class Colour
     {
         public static byte[] Off()
         {

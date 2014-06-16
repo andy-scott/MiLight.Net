@@ -2,7 +2,7 @@
 
 namespace MiLight.Net.Api
 {
-    public class WhiteCommands
+    public class White
     {
         public static byte[] AllOn()
         {
