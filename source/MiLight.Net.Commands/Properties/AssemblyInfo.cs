@@ -9,7 +9,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("MiLight.Net.Commands")]
 [assembly: AssemblyDescription("Portable Class Library of Api Commands to control MiLight / AppLamp lights, has White and Colour Commands")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Andy Scott")]
 [assembly: AssemblyProduct("MiLight.Net.Commands")]
 [assembly: AssemblyCopyright("Copyright ©  2014")]
 [assembly: AssemblyTrademark("")]
