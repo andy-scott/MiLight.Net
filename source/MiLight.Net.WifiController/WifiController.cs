@@ -17,6 +17,10 @@
             this.port = port;
         }
 
+        /// <summary>
+        /// Sends the command to the wifi controller, also has a 100 millisecond delay to ensure commands are not lost
+        /// </summary>
+        /// <param name="command">The command to control the lights</param>
         public void Send(byte[] command)
         {
             var sock = new Socket(AddressFamily.InterNetwork, SocketType.Dgram, ProtocolType.Udp);
@@ -25,6 +29,8 @@
             var endPoint = new IPEndPoint(serverAddr, this.port);
 
             sock.SendTo(command, endPoint);
+
+            System.Threading.Thread.Sleep(100);
         }
     }
 }

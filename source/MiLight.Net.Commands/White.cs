@@ -5,14 +5,16 @@
 
     public class White
     {
+        [Obsolete("Please use the On method passing Zone.All")]
         public static byte[] AllOn()
         {
-            return new byte[] { 0x35, 0x00, 0x55 };
+            return On(Zone.All);
         }
 
+        [Obsolete("Please use the Off method passing Zone.All")]
         public static byte[] AllOff()
         {
-            return new byte[] { 0x39, 0x00, 0x55 };
+            return Off(Zone.All);
         }
 
         public static byte[] BrightUp()
@@ -40,6 +42,9 @@
             byte value;
             switch (zone)
             {
+                case Zone.All:
+                    value = 0x35;
+                    break;
                 case Zone.One:
                     value = 0x38;
                     break;
@@ -64,6 +69,9 @@
             byte value;
             switch (zone)
             {
+                case Zone.All:
+                    value = 0x39;
+                    break;
                 case Zone.One:
                     value = 0x3B;
                     break;

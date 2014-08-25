@@ -5,21 +5,39 @@
 
     public static class Colour
     {
+        /// <summary>
+        /// Switch all coloured lights off
+        /// </summary>
+        /// <returns>Byte command</returns>
+        [Obsolete("Please use the Off method passing Zone All")]
         public static byte[] AllOff()
         {
-            return new byte[] { 0x41, 0x00, 0x55 };
+            return Off(Zone.All);
         }
 
+        /// <summary>
+        /// Switch all coloured lights on
+        /// </summary>
+        /// <returns>Byte command</returns>
+        [Obsolete("Please use the On method passing Zone All")]
         public static byte[] AllOn()
         {
-            return new byte[] { 0x42, 0x00, 0x55 };
+            return On(Zone.All);
         }
 
+        /// <summary>
+        /// Switch a specific zone of lights on
+        /// </summary>
+        /// <param name="zone">Zone to be switched on</param>
+        /// <returns>Byte command</returns>
         public static byte[] On(Zone zone)
         {
             byte value;
             switch (zone)
             {
+                case Zone.All:
+                    value = 0x42;
+                    break;
                 case Zone.One:
                     value = 0x45;
                     break;
@@ -39,11 +57,19 @@
             return new byte[] { value, 0x00, 0x55 };
         }
 
+        /// <summary>
+        /// Switch a specific zone of lights off
+        /// </summary>
+        /// <param name="zone">Zone to be switched off</param>
+        /// <returns>Byte command</returns>
         public static byte[] Off(Zone zone)
         {
             byte value;
             switch (zone)
             {
+                case Zone.All:
+                    value = 0x41;
+                    break;
                 case Zone.One:
                     value = 0x46;
                     break;
@@ -63,14 +89,18 @@
             return new byte[] { value, 0x00, 0x55 };
         }
 
-        public static byte[] Hue(decimal colourCode)
+        /// <summary>
+        /// Set the colour of the coloured bulbs
+        /// </summary>
+        /// <param name="colourCode">colour to set the lights to</param>
+        /// <returns>Byte command</returns>
+        public static byte[] Hue(int colourCode)
         {
-            var hexColourCode = decimal.ToByte(16);
-            return new byte[] { 0x20, hexColourCode, 0x55 };
+            return new byte[] { 0x40, Convert.ToByte(colourCode.ToString("X"), 16), 0x55 };
         }
 
         /// <summary>
-        /// Set the brightness level of teh coloured lights
+        /// Set the brightness level of the coloured lights
         /// </summary>
         /// <param name="level">Accepted values 2 - 27, 2 being low, 27 being high.  
         /// Values lower than 2 are coerced to 2, values higher than 27 are coerced to 27</param>
@@ -119,5 +149,36 @@
         {
             return new byte[] { 0x28, 0x00, 0x55 };
         }
+
+        /// <summary>
+        /// Set the coloured lights to White
+        /// </summary>
+        /// <param name="zone">Zone to control</param>
+        /// <returns>Byte command</returns>
+        public static byte[] SetWhite(Zone zone)
+        {
+            byte value;
+            switch (zone)
+            {
+                case Zone.All:
+                    value = 0xC2;
+                    break;
+                case Zone.One:
+                    value = 0xC5;
+                    break;
+                case Zone.Two:
+                    value = 0xC7;
+                    break;
+                case Zone.Three:
+                    value = 0xC9;
+                    break;
+                case Zone.Four:
+                    value = 0xCB;
+                    break;
+                default:
+                    throw new ArgumentOutOfRangeException("zone");
+            }
+
+            return new byte[] { value, 0x00, 0x55 };}
     }
 }
