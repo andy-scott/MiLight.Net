@@ -3,13 +3,15 @@
     using System.Net;
     using System.Net.Sockets;
 
-    public class WifiController
+    using MiLight.Net.Contracts;
+
+    public class WifiController : IController
     {
         private readonly string ip;
 
         private readonly int port;
 
-        public WifiController(string ip = "192.168.1.100", int port = 5000)
+        public WifiController(string ip = "192.168.1.100", int port = 8899)
         {
             this.ip = ip;
             this.port = port;

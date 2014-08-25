@@ -1,7 +1,8 @@
-﻿using System;
-
-namespace MiLight.Net.Api
+﻿namespace MiLight.Net.Api
 {
+    using System;
+    using MiLight.Net.Commands;
+
     public class White
     {
         public static byte[] AllOn()
@@ -32,14 +33,6 @@ namespace MiLight.Net.Api
         public static byte[] Cooler()
         {
             return new byte[] { 0x3F, 0x00, 0x55 };
-        }
-
-        public enum Zone
-        {
-            One = 0,
-            Two = 1,
-            Three = 2,
-            Four = 3
         }
 
         public static byte[] On(Zone zone)
