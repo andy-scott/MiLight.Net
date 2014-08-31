@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>MiLight.Net.WP8.WifiController</id>
+    <title>MiLight .net api commands</title>
+    <version>1.0.0</version>
+    <authors>Andy Scott</authors>
+    <owners>Andy Scott</owners>
+    <summary>MiLight / AppLamp Api Wifi Controller for WP 8.1</summary>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Windows Phone 8.1 Wifi Controller to control MiLight / AppLamp lights</description>
+    <projectUrl>https://github.com/andy-scott/MiLight.net</projectUrl>
+    <tags>MiLight AppLamp WP8.1</tags>
+  </metadata>
+  <files>
+    <file src="MiLight.Net.WP8.WifiController.dll" target="lib\net40" />
+    <file src="MiLight.Net.WP8.WifiController.dll" target="lib\Arm" />
+  </files>
+</package>

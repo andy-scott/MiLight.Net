@@ -13,6 +13,6 @@
     <tags>MiLight AppLamp</tags>
   </metadata>
   <files>
-    <file src="MiLight.Net.commands.dll" target="lib\net40" />
+    <file src="MiLight.Net.commands.dll" target="lib\portable-windows8+net45" />
   </files>
 </package>
