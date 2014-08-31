@@ -1,7 +1,9 @@
 ﻿namespace MiLight.Net.Contracts
 {
+    using System.Threading.Tasks;
+
     public interface IController
     {
-        void Send(byte[] command);
+        Task Send(byte[] command);
     }
 }

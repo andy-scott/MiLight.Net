@@ -29,7 +29,7 @@
         {
             var controller = new WifiController("192.168.0.6");
 
-            controller.Send(White.AllOn());
+            controller.Send(White.On(Zone.All));
         }
 
         [Fact]
@@ -37,7 +37,7 @@
         {
             var controller = new WifiController("192.168.0.6");
 
-            controller.Send(White.AllOff());
+            controller.Send(White.Off(Zone.All));
         }
 
         [Fact]
@@ -45,7 +45,7 @@
         {
             var controller = new WifiController("192.168.0.6");
 
-            controller.Send(Colour.AllOn());
+            controller.Send(Colour.On(Zone.All));
         }
 
         [Fact]
@@ -53,7 +53,7 @@
         {
             var controller = new WifiController("192.168.0.6");
 
-            controller.Send(Colour.AllOff());
+            controller.Send(Colour.Off(Zone.All));
         }
 
         [Fact]
