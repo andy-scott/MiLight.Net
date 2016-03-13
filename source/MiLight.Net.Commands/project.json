@@ -3,6 +3,7 @@
   },
   "frameworks": {
     "dnx451": { },
+    "dnx46": { },
     "dnxcore50": { },
     ".NETPortable,Version=v4.5,Profile=Profile259": { }
   },
